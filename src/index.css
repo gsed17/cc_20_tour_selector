@@ -67,7 +67,6 @@ button:focus-visible {
   }
 }
 
-const destinations = ["All Destinations", ...new Set(tours.map(t => t.name))];
-const filteredTours = selected === "All Destinations"
-  ? tours
-  : tours.filter(t => t.name === selected);
+{tours.map((tour) => (
+  <TourCard key={tour.id} tour={tour} onRemove={onRemove} />
+))}
