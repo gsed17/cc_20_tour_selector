@@ -66,4 +66,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-<link rel="icon" href="/favicon.ico" />
+
+const destinations = ["All Destinations", ...new Set(tours.map(t => t.name))];
+const filteredTours = selected === "All Destinations"
+  ? tours
+  : tours.filter(t => t.name === selected);
