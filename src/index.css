@@ -67,6 +67,6 @@ button:focus-visible {
   }
 }
 
-const handleRemove = (id) => {
-  setTours(tours.filter((tour) => tour.id !== id));
-};
+const fetchTours = async () => { ... }
+
+<button onClick={onRefresh}>Refresh</button>
