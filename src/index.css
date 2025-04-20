@@ -67,6 +67,6 @@ button:focus-visible {
   }
 }
 
-{tours.map((tour) => (
-  <TourCard key={tour.id} tour={tour} onRemove={onRemove} />
-))}
+const handleRemove = (id) => {
+  setTours(tours.filter((tour) => tour.id !== id));
+};
