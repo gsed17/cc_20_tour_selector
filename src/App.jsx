@@ -31,7 +31,7 @@ function App() {
     setTours(tours.filter((tour) => tour.id !== id));
   };
 
-  const destinations = ["All Destinations", ...new Set(tours.map(t => t.name))];
+  const destinations = ["All Destinations", ...new Set(tours.map(t => t.name[0].toUpperCase() + t.name.slice(1)))];
   const filteredTours = selected === "All Destinations"
     ? tours
     : tours.filter(t => t.name === selected);

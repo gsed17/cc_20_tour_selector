@@ -67,6 +67,3 @@ button:focus-visible {
   }
 }
 
-const fetchTours = async () => { ... }
-
-<button onClick={onRefresh}>Refresh</button>
