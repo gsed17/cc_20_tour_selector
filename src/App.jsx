@@ -37,7 +37,7 @@ function App() {
   const filteredTours = selected === "All Destinations"
     ? tours
     : tours.filter(t => t.name === selected);
-<select value={selected} onChange={(e) => setSelected(e.target.value)} disabled={destinations.length <= 1}>
+
 
   return (
     <div>
