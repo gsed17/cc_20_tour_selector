@@ -26,6 +26,9 @@ function App() {
   useEffect(() => {
     fetchTours();
   }, []);
+  setTours([]);
+setError("Something went wrong. Please try again later.");
+
 
   const handleRemove = (id) => {
     setTours(tours.filter((tour) => tour.id !== id));
